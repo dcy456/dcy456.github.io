@@ -71,12 +71,21 @@
   .role{color:var(--muted);margin:0 0 4px}
   .affil{color:var(--muted);margin:0}
   .affil a{color:inherit}
+  .school-icon{
+    width:18px;height:18px;margin-right:6px;vertical-align:-4px;
+    object-fit:contain;
+  }
 
   .links{margin-top:14px;display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
   .links a{
     display:inline-block;padding:4px 11px;border:1px solid var(--rule);
     border-radius:999px;font-size:14px;color:var(--fg);text-decoration:none;
     background:var(--chip);transition:border-color .15s,color .15s;
+  }
+  .link-icon{
+    width:15px;height:15px;margin-right:6px;vertical-align:-3px;
+    fill:none;stroke:currentColor;stroke-width:1.8;
+    stroke-linecap:round;stroke-linejoin:round;
   }
   .links a:hover{border-color:var(--accent);color:var(--accent)}
 
@@ -155,13 +164,13 @@
       <p class="role">Ph.D. Student in Computer Science</p>
       <p class="affil">
         School of Computing and Information Systems<br>
-        <a href="https://www.smu.edu.sg/">Singapore Management University</a><br>
+        <a href="https://www.smu.edu.sg/"><img class="school-icon" src="https://www.smu.edu.sg/themes/smubase_5g/assets/favicon/favicon-32x32.png" alt="">Singapore Management University</a><br>
       </p>
 
       <nav class="links">
-        <a href="mailto:cy.dong.2026@phdcs.smu.edu.sg">Email</a>
-        <a href="https://github.com/dcy456">GitHub</a>
-        <a href="https://orcid.org/0009-0005-8725-0663">ORCID</a>
+        <a href="mailto:cy.dong.2026@phdcs.smu.edu.sg"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4z"></path><path d="m4 7 8 6 8-6"></path></svg>Email</a>
+        <a href="https://github.com/dcy456"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 .9-4-2-5-2m10 4v-3.9c0-1.1.1-1.6-.5-2.1 2.9-.3 5.9-1.4 5.9-6.2 0-1.4-.5-2.5-1.3-3.4.1-.3.6-1.7-.1-3.4 0 0-1.1-.4-3.5 1.3a12 12 0 0 0-6.4 0C5.7-.3 4.6.1 4.6.1c-.7 1.7-.2 3.1-.1 3.4C3.7 4.4 3.2 5.5 3.2 6.9c0 4.8 3 5.9 5.9 6.2-.4.4-.6.9-.6 1.8V19"></path></svg>GitHub</a>
+        <a href="https://orcid.org/0009-0005-8725-0663"><svg class="link-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M9 8h.01M9 10v6m3-6h1.5a3 3 0 1 1 0 6H12z"></path></svg>ORCID</a>
 
         <!-- TO ADD YOUR CV: put cv.pdf in this folder, then delete the two comment
              marker lines around the link below so it becomes a live link again.
